@@ -2,7 +2,7 @@
 ![Test GIF](https://github.com/K1A2/ImageDragSelectView/blob/master/selectview_test_2.gif)
 
 
-This custom View make possible to crop image with dragging.
+This custom View make possible to crop image with dragging. The biggest advantage of this view is that you can cut several parts at once and return them separately.
  
  이 커스텀 뷰는 사진에서 특정 영역을 드래그로 잘라내고 싶을때 사용하는 뷰 입니다. 이 뷰의 가장 큰 장점은 한번에 한번이 아닌 여러개의 부분을 잘라서 각각 따로따로 리턴이 가능하다는 점 입니다.
  # 사용법
@@ -52,7 +52,7 @@ imageDragSelectView = findViewById(R.id.imageDragSelectView);
 ### getCropBitmap(int position)
 선택 영역이 여러개인 경우 몇번째로 그려진 부분을 잘라올지 int로 지정하면 해당 부분을 잘라서 리턴해 줍니다. 그린 갯수보다 큰 수를 입력하면 null이 리턴됩니다.
 ### getCropBitmaps()
-자를 부분이 여러개 지정되 있다면모든 영역을 한번에 리턴합니다.
+자를 부분이 여러개 지정되 있다면모든 영역을 한번에 리턴합니다. Bitmap[]으로 리턴 됩니다.
 ### getSectionCount()
 몇개의 부분이 그려졌는지 갯수를 리턴합니다.
 
