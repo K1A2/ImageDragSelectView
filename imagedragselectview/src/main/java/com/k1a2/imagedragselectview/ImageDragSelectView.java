@@ -168,10 +168,14 @@ public class ImageDragSelectView extends View {
     private void setTypeArray(TypedArray typedArray) {
 
         int lineColor = typedArray.getColor(R.styleable.ImageDragSelectView_lineColor, 0);
-        paint.setColor(lineColor);
+        if (lineColor != 0) {
+            paint.setColor(lineColor);
+        }
 
-        float linwWidth = typedArray.getFloat(R.styleable.ImageDragSelectView_lineWidth, 0);
-        paint.setStrokeWidth(linwWidth);
+        float linwWidth = typedArray.getFloat(R.styleable.ImageDragSelectView_lineWidth, -1);
+        if (linwWidth >= 0) {
+            paint.setStrokeWidth(linwWidth);
+        }
 
         typedArray.recycle();
 
