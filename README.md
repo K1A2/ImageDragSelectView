@@ -33,3 +33,11 @@ xml에 다음과 같이 추가합니다.
             android:layout_height="match_parent"
             android:id="@+id/custom_view"/>
 ```
+
+
+코드애서 id를 통해 **ImageDragSelectView**를 가져옵니다.
+```java
+private ImageDragSelectView imageDragSelectView = null;
+...
+imageDragSelectView = findViewById(R.id.imageDragSelectView);
+```
