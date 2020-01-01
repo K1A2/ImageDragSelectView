@@ -1,5 +1,5 @@
 # ImageDragSelectView
-![Test GIF](https://github.com/K1A2/ImageDragSelectView/blob/master/selectview_test.gif)
+![Test GIF](https://github.com/K1A2/ImageDragSelectView/blob/master/selectview_test_2.gif)
 
 
 This custom View make possible to crop image with dragging.
