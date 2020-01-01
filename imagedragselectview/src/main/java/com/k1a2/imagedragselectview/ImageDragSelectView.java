@@ -188,7 +188,11 @@ public class ImageDragSelectView extends View {
 
     //선택된 영역중 하나만 가져옴
     public Bitmap getCropBitmap(int position) {
-        return cropBitmap(position);
+        if (position > points.size()) {
+            return null;
+        } else {
+            return cropBitmap(position);
+        }
     }
 
     //선택 영역 잘라서 비트맵으로 리턴
