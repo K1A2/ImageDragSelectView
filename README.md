@@ -9,16 +9,17 @@ This custom View make possible to crop image with dragging.
  1. build.gradle에 다음과 같이 추가합니다.
  ```
  allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
+}
 ```
  
  
  2.dependency를 추가합니다.
- ```dependencies {
-	        implementation 'com.github.K1A2:ImageDragSelectView:{version}'
-	}
+ ```
+ dependencies {
+ 	implementation 'com.github.K1A2:ImageDragSelectView:{version}'
+}
 ```
