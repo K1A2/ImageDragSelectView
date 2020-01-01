@@ -26,7 +26,7 @@ This custom View make possible to crop image with dragging.
 
 
 xml에 다음과 같이 추가합니다.
-```
+```xml
 <com.k1a2.imagedragselectview.ImageDragSelectView
             android:layout_width="match_parent"
             android:layout_weight="1"
